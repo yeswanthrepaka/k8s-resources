@@ -6,8 +6,3 @@ metadata:
   labels:
     project: roboshop
     duration: 2hours
-
-spec: 
-  containers:
-  - name: nginx
-    image: nginx
