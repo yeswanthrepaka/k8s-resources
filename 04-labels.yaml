@@ -2,10 +2,11 @@ apiVersion: v1
 kind: Pod
 
 metadata:
-	name: layertest
-  labels: 
+  name: layer-test
+  labels:
     project: roboshop
-    course: aws
+    duration: 2hours
+
 spec:
   containers:
 	- name: nginx
