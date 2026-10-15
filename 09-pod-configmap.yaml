@@ -2,12 +2,20 @@ apiVersion: v1
 kind: Pod
 
 metadata:
-  name: resources-test
+  name: pod-configmap-test
 
 spec:
   containers:
-  - name: nginx
-    image: nginx
-    envFrom:
-    - configMapRef:
-        name: configmap
+    - name: nginx
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: configmap
+
+# spec:
+#   containers:
+#   - name: nginx
+#     image: nginx
+#     envFrom:
+#     - configMapRef:
+#         name: configmap
