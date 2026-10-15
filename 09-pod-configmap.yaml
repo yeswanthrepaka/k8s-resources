@@ -6,16 +6,8 @@ metadata:
 
 spec:
   containers:
-    - name: nginx
-      image: nginx
-      envFrom:
-        - configMapRef:
-            name: configmap
-
-# spec:
-#   containers:
-#   - name: nginx
-#     image: nginx
-#     envFrom:
-#     - configMapRef:
-#         name: configmap
+  - name: nginx
+    image: nginx
+    envFrom:
+    - configMapRef:
+        name: configmap
