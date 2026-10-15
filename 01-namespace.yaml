@@ -5,7 +5,7 @@ metadata:
   name: roboshop
   labels:
     project: roboshop
-    duration: 2hrs
+    duration: 2hours
 
 spec: 
   containers:
