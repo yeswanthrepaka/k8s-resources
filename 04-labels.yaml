@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 
 metadata:
-	name: layertest
+	name: layer-test
   labels: 
     project: roboshop
     course: aws
