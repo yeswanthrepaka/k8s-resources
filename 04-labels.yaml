@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+	name: layertest
+  labels: 
+    project: roboshop
+    course: aws
+spec:
+  containers:
+	- name: nginx
+	  image: nginx

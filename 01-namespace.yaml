@@ -3,6 +3,11 @@ kind: Namespace
 
 metadata:
   name: roboshop
-  labels: 
+  labels:
     project: roboshop
-    course: aws
+    duration: 2hrs
+
+spec: 
+  containers:
+  - name: nginx
+    image: nginx
