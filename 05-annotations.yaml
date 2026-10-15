@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Pod
 
 metadata: 
-  name: annotaions-test
-  annotaions:
+  name: annotations-test
+  annotations:
     imageregistry: "https://hub.docker.com/"
     jenkinsURL: "https://jenkins.joindevops.com/build/job/roboshop/34"
 
