@@ -7,6 +7,8 @@ metadata:
     project: roboshop
     tier: frontend
     component: frontend
+  annotations:
+    kubernetes.io/change-cause: "nginx latest image"
 
 spec: 
   replicas: 1
@@ -15,7 +17,7 @@ spec:
       project: roboshop
       tier: frontend
       component: frontend
-      
+
   template:
     metadata:
       labels: 
