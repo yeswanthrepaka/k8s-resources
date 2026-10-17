@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+
+metadata:
+  name: nginx
+  labels:
+    project: roboshop
+    tier: frontend
+    component: frontend
+
+spec: 
+  replicas: 1
+  selector:
+    matchlabels:
+      project: roboshop
+      tier: frontend
+      component: frontend
+
+  template:
+    metadata:
+      labels:
+        project: roboshop
+        tier: frontend
+        component: frontend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
