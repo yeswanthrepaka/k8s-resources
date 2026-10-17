@@ -11,7 +11,7 @@ metadata:
     kubernetes.io/change-cause: "nginx latest image"
 
 spec: 
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       project: roboshop
