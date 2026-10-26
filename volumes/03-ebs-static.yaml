@@ -15,6 +15,7 @@ spec:
     driver: ebs.csi.aws.com
     fsType: ext4
     volumeHandle: vol-052516247a4a4e158
+
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -27,11 +28,12 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClass: "" #if not giving then it will take default
+  storageClassName: "" #if not giving then it will take default
   resources:
     requests:
       storage: 2Gi
   volumeName: ebs-static
+  
 ---
 apiVersion: v1
 kind: Pod
