@@ -33,7 +33,7 @@ spec:
     requests:
       storage: 2Gi
   volumeName: ebs-static
-  
+
 ---
 apiVersion: v1
 kind: Pod
@@ -46,8 +46,8 @@ metadata:
 spec:
   volumes:
   - name: html-data
-    PersistentVolumeClaim:
-      ClaimName: ebs-static-pvc
+    persistentVolumeClaim:
+      claimName: ebs-static-pvc
   containers:
   - name: nginx
     image: nginx
