@@ -50,5 +50,5 @@ spec:
     volumeMounts:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
-  nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c
+  # nodeSelector:
+  #   topology.kubernetes.io/zone: us-east-1c
